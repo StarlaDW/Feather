@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Feather — download</title>
+<meta name="description" content="Download Feather for Windows or Android.">
+<link rel="icon" href="assets/feather-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="mark" href="./" aria-label="Feather home">
+    <img src="assets/feather-mark.png" alt="" width="30" height="30">
+    <span>Feather</span>
+  </a>
+  <nav class="bar-links">
+    <a href="https://github.com/StarlaDW/Feather" rel="noopener">Source</a>
+    <a href="https://github.com/StarlaDW/Feather/releases" rel="noopener">All releases</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Opens fast, stays out of your way.</h1>
+    <p class="lede">
+      A browser for Windows and Android that keeps your history, passwords and bookmarks
+      in a folder you can see. No account, no sync, nothing uploaded.
+    </p>
+  </section>
+
+  <section class="choices" aria-label="Choose your platform">
+
+    <article class="card card-windows">
+      <div class="card-head">
+        <h2>Windows</h2>
+        <span class="pill" id="windows-version" hidden></span>
+      </div>
+      <p class="card-text">
+        A small installer that fetches the current build, checks it, and puts Feather in your own
+        user folder. No admin password needed. The same file runs on Windows 7 SP1 through 11;
+        extensions need Windows 10 or 11, since 7 stops at an engine without them.
+      </p>
+      <a class="button button-primary" id="windows-button" href="downloads/FeatherSetup.exe">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16"/></svg>
+        Download for Windows
+      </a>
+      <p class="card-meta" id="windows-meta">Windows 7 SP1 to 11 · 64-bit · 441 KB</p>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <h2>Android</h2>
+        <span class="pill" id="android-version" hidden></span>
+      </div>
+      <p class="card-text">
+        The newest signed APK, downloaded straight from the release page. Android will ask
+        you to allow installs from this browser the first time.
+      </p>
+      <a class="button button-ghost is-pending" id="android-button" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16"/></svg>
+        <span id="android-button-label">Checking for a build…</span>
+      </a>
+      <p class="card-meta" id="android-meta">Looking up the latest mobile release.</p>
+    </article>
+
+  </section>
+
+  <section class="facts">
+    <div>
+      <h3>Your data stays put</h3>
+      <p>History, bookmarks, saved logins and settings live in a Feather folder on the machine. Nothing is sent anywhere.</p>
+    </div>
+    <div>
+      <h3>Ads filtered at the door</h3>
+      <p>Requests to ad and tracker hosts are dropped before the page loads them. There is no subscription and no allow-list.</p>
+    </div>
+    <div>
+      <h3>No Feather account</h3>
+      <p>There is no sign-in, so there is nothing to leak. Moving to another computer is a file you carry yourself.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Feather is a work in progress. The Android build has tabs, settings, ad blocking and the music bar; bookmarks and passwords are still coming. Both files are served from GitHub Releases.</p>
+  <p class="foot-small">
+    <a href="https://github.com/StarlaDW/Feather" rel="noopener">github.com/StarlaDW/Feather</a>
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
